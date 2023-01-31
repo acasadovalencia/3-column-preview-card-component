@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100;200;400&display=swap');
+:root{
+    --big-shoulders-font: 'Big Shoulders Display', cursive;
+    --lexend-font:'Lexend Deca', sans-serif;
+    --bright-orange-color: hsl(31, 77%, 52%);
+    --dark-cyan-color:hsl(184, 100%, 22%);
+    --very-dark-cyan-color:hsl(179, 100%, 13%);
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+body{
+    font-family: var(--lexend-font);
+    font-size: 1.5rem;
+    color: #fff;
+}
+.cars__section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    min-width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.sedans__car{
+    background-color: var(--bright-orange-color);
+    padding: 3rem;
+    height: 45rem;
+    border-radius: 1rem 0 0 1rem;
+    max-width: 27rem;  
+}
+.suv__car{
+    background-color: var(--dark-cyan-color);
+    padding: 3rem;
+    height: 45rem;
+    max-width: 27rem;    
+}
+.luxury__car{
+    background-color: var(--very-dark-cyan-color);
+    padding: 3rem;
+    height: 45rem;
+    border-radius: 0 1rem 1rem 0 ;
+    max-width: 27rem;    
+}
+.type__name{
+    font-family: var(--big-shoulders-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 3.2rem;
+    margin: 1.5rem;
+    font-weight: 700;
+}
+.paragraph{
+    font-weight: 300;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    margin: 1.5rem ;
+}
+.type__img{
+    width: 5.3rem;
+    margin: 0 1.5rem;
+    margin: 1rem ;
+}
+.btn{
+    padding: 1.3rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-family: var(--lexend-font);
+    margin: 8rem 0 0 1.5rem;
+    position: absolute;
+}
+.btn-sedan{
+    color: var(--bright-orange-color);
+}
+.btn-suv{
+    color: var(--dark-cyan-color);
+}
+.btn-luxury{
+    color: var(--very-dark-cyan-color);
+}
+.attribution { font-size: 1.4rem; text-align: center; margin-top: 10rem; color: #000; }
+.attribution a { font-size: 1.4rem; color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:800px){
+    .container{
+        display: block;
+        
+    }
+    .sedans__car{
+        border-radius: 1rem 1rem 0 0;
+    }
+    .luxury__car{
+        border-radius: 0 0 1rem 1rem;
+    }
+    .attribution { font-size: 1rem; }
+    .attribution a { font-size: 1rem; }
+    
+}
+
+
+
+
